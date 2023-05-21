@@ -6,6 +6,7 @@ The second value (149) represents the y-coordinate of the top-left corner of the
 The third value (636) represents the width of the ROI.
 The fourth value (407) represents the height of the ROI.
 
+700 by 700
 ROI: (242, 314, 58, 141)
 ROI: (243, 483, 59, 142)
 ROI: (331, 312, 58, 143)
@@ -16,13 +17,27 @@ ROI: (508, 313, 55, 142)
 ROI: (507, 482, 57, 142)
 ROI: (594, 311, 56, 142)
 ROI: (593, 482, 59, 141)
+
+
+1200 by 700
+
+ROI: (429, 314, 78, 139)
+ROI: (429, 484, 77, 142)
+ROI: (583, 315, 77, 139)
+ROI: (583, 483, 77, 140)
+ROI: (732, 313, 77, 142)
+ROI: (733, 483, 77, 141)
+ROI: (884, 312, 74, 143)
+ROI: (883, 483, 76, 141)
+ROI: (1030, 313, 80, 142)
+ROI: (1031, 482, 77, 142)
 """
 
 import cv2
 
 im = cv2.imread("image.jpg")
 # Resize the image to 700 by 700
-im = cv2.resize(im, (700, 700))
+im = cv2.resize(im, (1200, 700))
 
 regions = {}  # Dictionary to store multiple regions
 
